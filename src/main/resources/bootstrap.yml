@@ -1,13 +1,17 @@
 spring:
   application:
     name: helloWorldRegistry
-
+    
 ---
 spring:
-  profiles: cloud
+  application:
+    name: helloWorldRegistryFromCloud
+  
 eureka:
-  instance:
-    hostname: eurekatest.cfapps.io
+  client:
+    serviceUrl:
+      defaultZone: http://eurekatest.cfapps.io/eureka/
+
     
     
     
