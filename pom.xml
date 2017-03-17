@@ -10,6 +10,8 @@
 
 	<groupId>spring-cloud-registry-test</groupId>
 	<artifactId>helloWorldRegistry</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
     
 	<dependencies>
 		<dependency>
@@ -21,4 +23,13 @@
 			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>		
 	</dependencies>
+	
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>	
 </project>
