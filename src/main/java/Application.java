@@ -14,11 +14,6 @@ public class Application {
 	String home() {
 		return "Hello Registry!";
 	}	
-
-	@RequestMapping("/info")
-	String info() {
-		return "Info";
-	}
 	
 	public static void main(String[] args) {
 		SpringApplication.run(Application.class, args);
