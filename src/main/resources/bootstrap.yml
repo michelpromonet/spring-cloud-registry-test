@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: helloWorldRegistry
+
+---
+spring:
+  profiles: cloud
+eureka:
+  instance:
+    hostname: eurekatest.cfapps.io
+    
+    
+    
